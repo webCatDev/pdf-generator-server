@@ -6,7 +6,6 @@ function generateHTML({fullname, language, country, age}) {
     <style>
     .container {
   padding: 1rem 2rem;
-  width: 25rem;
   background-color: #e2edec;
   border-radius: 3px;
   border: 1px solid #80ddf1;
