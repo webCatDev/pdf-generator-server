@@ -6,6 +6,7 @@ const pdf = require("html-pdf");
 const cors = require("cors");
 const { v4: uuid } = require("uuid");
 const generateHTML = require("./generateHTML");
+console.log(process.env.NODE_ENV)
 
 app.use(cors());
 app.use(express.static("/image"))
