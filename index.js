@@ -6,7 +6,8 @@ const pdf = require("html-pdf");
 const cors = require("cors");
 const { v4: uuid } = require("uuid");
 const generateHTML = require("./generateHTML");
-console.log(process.env.NODE_ENV)
+
+const  PORT = process.env.PORT || 5000
 
 app.use(cors());
 app.use(express.static("/image"))
@@ -45,4 +46,4 @@ app.all("*", (req, res) => {
   res.status(404).send("Üzgünüz. Bu sayfa henüz oluşturulmadı.");
 });
 
-app.listen(5000);
+app.listen(PORT);
