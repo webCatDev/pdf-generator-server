@@ -12,6 +12,10 @@ app.use(cors());
 app.use(express.static("/image"))
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.send("hello world")
+})
+
 app.post("/create-pdf", async (req, res) => {
   const id = uuid();
   pdf
